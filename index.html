@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link href="https://cdn.jsdelivr.XYZ/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Bootstap project</title>
+</head>
+<body>
+<!-- ----Start header-------------------------------------------------------------- -->
+    <header>
+        <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top opacity-75">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo1.jpg" alt="Avatar Logo" style="width:60px;" class="rounded-pill ms-4 me-2"> 
+                </a>
+                <span class="navbar-text fs-4 fw-semibold">GOOD</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav ms-4 me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="javascript:void(0)">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="javascript:void(0)">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button type="button" class="btn text-info dropdown-toggle" data-bs-toggle="dropdown">Trips</button>
+                                <ul class="dropdown-menu mt-4">
+                                    <li><a class="dropdown-item text-info fw-semibold" href="#">CAIRO</a></li>
+                                    <li><a class="dropdown-item text-info fw-semibold" href="#">ALEX</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item text-info fw-semibold" href="#">LUXOR</a></li>
+                                    <li><a class="dropdown-item text-info fw-semibold" href="#">ASWAN</a></li>
+                                    <li><a class="dropdown-item text-info fw-semibold" href="#">SHARM EL SHEIKH</a></li>
+                                    <li><a class="dropdown-item text-info fw-semibold" href="#">EL GALALH</a></li>
+                                    <li><a class="dropdown-item text-info fw-semibold" href="#">MORE...</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item"> 
+                            <a class="nav-link text-info" href="javascript:void(0)">About</a>
+                        </li>
+                    </ul>
+          
+                    <form class="d-flex">
+                        <input class="form-control me-3 border-info" type="text" placeholder="Search" style="width: 300px;">
+                    </form>
+                    <button class="btn btn-info text-light me-2" type="button">Search</button>
+                    
+                    <!-- Button to Open the Modal -->
+                    <button type="button" class="btn btn-info text-light me-3" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Login
+                    </button>  
+                </div>  <!-- /collapase -->
+            </div>  <!-- /container-fluid -->
+        </nav>
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-info">
+                        <h4 class="modal-title text-light">Login</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>                            
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <form >
+                            <div class="mb-3 mt-3">
+                              <label for="email" class="form-label text-info">Email address:</label>
+                              <input type="email" class="form-control border-info" id="email" name="email">
+                              <p>we will never share your email with any one else</p>
+                            </div>
+                            <div class="mb-3">
+                              <label for="pwd" class="form-label text-info">Password:</label>
+                              <input type="password" class="form-control border-info" id="pwd" name="pswd">
+                            </div>
+                            <div class="form-check form-switch ms-4">
+                                <input class="form-check-input bg-info border-0" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+                                <label class="form-check-label text-info" for="mySwitch">Remember me</label>
+                              </div>
+                        </form>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info text-light me-auto" data-bs-dismiss="modal">Login</button>
+                        <button type="button" class="btn btn-info text-light" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>  <!-- /modal-content -->
+            </div>  <!-- /modal-dialog -->
+        </div>  <!-- /modal -->
+    </header>
+    <!-- ----End header---------------------------------------------------------------------- -->
+    <main>
+        <!-- Start Carousel section---------------------------------------------------------- -->
+        <section>
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                </div>
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/cairo/img1.jpg" alt="Cairo" class="d-block w-100">
+                        <div class="carousel-caption rounded-4">
+                            <h3>CAIRO</h3>
+                            <p>We had such a great time in Egypt!</p>
+                            <button class="btn btn-primary" type="button">Visit Us</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/aswan/img5.jpg" alt="Aswan" class="d-block w-100">
+                        <div class="carousel-caption  rounded-4">
+                            <h3>ASWAN</h3>
+                            <p>Thank you, Aswan!</p>
+                            <button class="btn btn-primary" type="button">Visit Us</button>
+                        </div> 
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/sharm/IMG-20230227-WA0036.jpg" alt="Sharm" class="d-block w-100">
+                        <div class="carousel-caption  rounded-4">
+                            <h3>SHARM EL SHEIKH</h3>
+                            <p>We love this City!</p>
+                            <button class="btn btn-primary" type="button">Visit Us</button>
+                        </div>  
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/galalh/IMG-20230227-WA0039.jpg" alt="Galalh" class="d-block w-100">
+                        <div class="carousel-caption  rounded-4">
+                            <h3>EL GALALH</h3>
+                            <p>We love this city!</p>
+                            <button class="btn btn-primary" type="button">Visit Us</button>
+                        </div>  
+                    </div>
+                </div>
+                <!-- Left and right controls/icons -->
+                <div class="carousel-control">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+
+                <!-- List icons -->
+                <aside>
+                    <ul class="list">
+                        <li ><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li ><a href="#"><i class="fab fa-whatsapp-square"></i></a></li>
+                        <li ><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                        <li ><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li ><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                    </ul>
+                </aside>                
+            </div>
+        </section>
+        <!-- End Carousel section-------------------------------------------------------- -->
+    </main>
+
+    <section>
+        <!-- Start welcome--------------------------------------------------------------- -->
+        <div class="container-fluid welcome p-4 shadow-lg">
+            <h2 class="text-title">WELCOME</h2>
+            <P class="text-light fs-5">Are you planning to visit Egypt? We will offer the ultimate lour in Egypt, covering Cairo, Alex from a one day trip to a 10 day dream, We will take care of all your needs book, hotels 24/7 Customer Services.</P>
+            <button type="button" class="btn btn-light text-info fs-5 fw-semibold">Learn More</button>
+        </div>
+        <hr>
+        <!-- End welcome----------------------------------------------------------------- -->
+
+        <!-- Start destination----------------------------------------------------------- -->
+        <div class="container-fluid destination p-5 shadow-lg">
+            <h2 class="text-light text-center fw-semibold fs-1">Popular destinations in Egypt</h2>
+        </div>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-5 fw-semibold shadow-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      GIZA CITY
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Major tourist destinations include the millennia-old monuments in the Nile Valley. Principal among them are the pyramids and Great Sphinx at Giza.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-5 fw-semibold shadow-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                      LUXOR CITY
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Luxor about 500 km south of Cairo, is the site of the ancient city of Thebes. It includes the ruins of the temple complexes at Karnak and Luxor, which stand within the modern
+                            and the opposite side of the Nile River lie the monuments. templs and tombs on the West Bank Necropolis, which include the valley of the Kings and valley of the Queens.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-5 fw-semibold shadow-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                      SINAI PENINSULA
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Sinai has the beach resorts of Sharm el-Sheikh, Dahab, Nuweiba and Taba as well as locations mentioned in the Bible such as Mount Sinai ("Jabal Mosa") Sant Catherine's Monastery may be the oldest working Christian monastery in the world.</p>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+        <!-- End destination------------------------------------------------------------- -->
+    </section>
+
+    <!-- Start Translate section--------------------------------------------------------- -->
+    <section>
+        <div class="container-fluid translate rounded-2 p-3">
+            <div class="translate-header text-center">
+                <h2 class="text-light fw-semibold fs-1">Translate From Arabic To English</h2>
+            </div>
+        </div>
+        <div class="write-translate w-100 p-4 shadow-lg">
+            <h4 class="text-light">Write and Translate <a href="#" class="text-decoration-none"> Press Here</a></h4>
+            <button type="button" id="btn1" class="btn btn-light text-info mb-3">Copy</button><br>
+            <textarea class="ttt rounded-2 p-2 w-100" placeholder="translate"></textarea>
+        </div><hr>
+        <div class="container-fluid translate rounded-2 p-3">
+            <div class="translate-header text-center">
+                <h1 class="text-light fw-semibold">Translate From Arabic To French</h1>
+            </div>
+        </div>
+        <div class="write-translate w-100 p-4 shadow-lg">
+            <h4 class="text-light">Write and Translate <a href="#" class="text-decoration-none"> Press Here</a></h4>
+            <button type="button" id="btn2" class="btn btn-light text-info mb-3">Copy</button><br>
+            <textarea class="ttt rounded-2 p-2 w-100" placeholder="translate"></textarea>
+        </div><hr>
+        <div class="container-fluid translate rounded-2 p-3">
+            <div class="translate-header text-center">
+                <h1 class="text-light fw-semibold">Translate From Arabic To German</h1>
+            </div>
+        </div>
+        <div class="write-translate w-100 p-4 shadow-lg">
+            <h4 class="text-light">Write and Translate <a href="#" class="text-decoration-none"> Press Here</a></h4>
+            <button type="button" id="btn3" class="btn btn-light text-info mb-3">Copy</button><br>
+            <textarea class="ttt rounded-2 p-2 w-100" placeholder="translate"></textarea>
+        </div><hr>
+        <div class="backimg "></div>
+    </section>
+    <!-- End Translate section----------------------------------------------------------- -->
+
+    <section class="sec">
+        <div class="section-header text-center p-4 shadow-lg">
+            <h2 class="section-title fw-bold fs-1">POPULAR DESTINATIONS IN EGYPT</h2>
+        </div>
+        <div class="parent d-flex row">
+            <div class="card card-d shadow-lg mx-auto mt-5 cols cols-sm cols-md-4" style="width:350px; height: 400;">
+                <img class="card-img-top " src="images/cairo/img3.jpg" alt="Card image" height="400">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <h5 class="card-title text-info">CAIRO</h5>
+                        <a href="#" class="btn btn-info text-light">Know More</a>
+                    </div>
+                    <p class="card-text text-info">Capital of Egypt</p>
+                </div>
+            </div>
+            <div class="card card-d shadow-lg mx-auto mt-5 cols cols-sm cols-md-4" style="width:350px; height: 400">
+                <img class="card-img-top" src="images/alex/IMG-20230227-WA0035.jpg" alt="Card image" height="400">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <h5 class="card-title text-info">ALEXANDRIA</h5>
+                        <a href="#" class="btn btn-info text-light">Know More</a>
+                    </div>
+                    <p class="card-text text-info">The bride of the Mediterranean</p>
+                </div>
+            </div>
+            <div class="card card-d shadow-lg mx-auto mt-5 cols cols-sm cols-md-4" style="width:350px; height: 400">
+                <img class="card-img-top" src="images/luxur/img5.jpg" alt="Card image" height="400">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <h5 class="card-title text-info">LUXOR</h5>
+                        <a href="#" class="btn btn-info text-light">Know More</a>
+                    </div>
+                    <p class="card-text text-info">The Capital of Ancient Kingdom</p>
+                </div>
+            </div>
+        </div>
+        <div class="parent d-flex row ">
+            <div class="card card-d shadow-lg mx-auto mt-5 cols cols-sm cols-md-4" style="width:350px; height: 400">
+                <img class="card-img-top" src="images/aswan/img10.jpg" alt="Card image" height="400">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <h5 class="card-title text-info">ASWAN</h5>
+                        <a href="#" class="btn btn-info text-light">Know More</a>
+                    </div>
+                    <p class="card-text text-info">Nubian City in The South of Egypt</p>
+                </div>
+            </div>
+            <div class="card card-d shadow-lg mx-auto mt-5 cols cols-sm cols-md-4" style="width:350px; height: 400">
+                <img class="card-img-top" src="images/new cairo/IMG-20230227-WA0047.jpg" alt="Card image" height="400">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <h5 class="card-title text-info">NEW CAPITAL</h5>
+                        <a href="#" class="btn btn-info text-light">Know More</a>
+                    </div>
+                    <p class="card-text text-info">The New Adminstrative Capital</p>
+                </div>
+            </div>
+            <div class="card card-d shadow-lg mx-auto mt-5 cols cols-sm cols-md-4" style="width:350px; height: 400">
+                <img class="card-img-top" src="images/sharm/img2.jpg" alt="Card image" height="400">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <h5 class="card-title text-info">SHARM EL SHEIKH</h5>
+                        <a href="#" class="btn btn-info text-light">Know More</a>
+                    </div>
+                    <p class="card-text text-info">Beautiful City in Egypt</p>
+                </div>
+            </div>
+        </div>
+        <div class="parent d-flex row mb-5">
+            <div class="card card-d shadow-lg mx-auto mt-5 cols cols-sm cols-md-4" style="width:350px; height: 400">
+                <img class="card-img-top" src="images/siwa/img1.jpg" alt="Card image" height="400">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <h5 class="card-title text-info">SIWA</h5>
+                        <a href="#" class="btn btn-info text-light">Know More</a>
+                    </div>
+                    <p class="card-text text-info">The Capital of Ancent Kingdom</p>
+                </div>
+            </div>
+            <div class="card card-d shadow-lg mx-auto mt-5 cols cols-sm cols-md-4" style="width:350px; height: 400">
+                <img class="card-img-top" src="images/Hurghada/zyanya-OMwEkftvQKs-unsplash.jpg" alt="Card image" height="400">
+                <div class="card-body"> 
+                    <div class="d-flex justify-content-between">
+                        <h5 class="card-title text-info">HURGHADA</h5>
+                        <a href="#" class="btn btn-info text-light">Know More</a>
+                    </div> 
+                    <p class="card-text text-info">City on The Red Sea</p>  
+                </div>
+            </div>
+        </div>
+        <div class="bbmm"></div><hr>
+    </section>
+
+    <!-- Start thanks section------------------------------------------------------------------ -->
+    <section>
+        <div class="section-header text-center p-4 shadow-lg">
+            <h2 class="section-title fw-semibold fs-1">THANKS FOR</h2>
+        </div>
+        <div class="container">
+            <div class="d-flex row pb-5">
+                <div class="card card-t mx-auto shadow-lg mt-5 cols cols-sm cols-lg-4" style="width:370px">
+                    <img class="card-img-top" src="images/trainer-1.jpg" alt="Card image" height="450">
+                    <div class="card-img-overlay p-5  opacity-75">
+                      <h5 class="card-title text-light">All thanks and appreciation</h5>
+                      <p class="card-text text-light"><i class="far fa-clock"></i> October 15, 2020</p>
+                      <div class="card-footer">
+                        <img src="images/trainer-1.jpg" alt="" class="rounded-pill" width="95px">
+                        <h6 class="text-light">Eng John</h6>
+                        <p class="text-light">Director of UI/UX</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card card-t mx-auto shadow-lg mt-5 cols cols-sm cols-lg-4" style="width:370px">
+                    <img class="card-img-top" src="images/trainer-3.jpg" alt="Card image" height="450">
+                    <div class="card-img-overlay p-5  opacity-75">
+                      <h5 class="card-title text-light">All thanks and appreciation</h5>
+                      <p class="card-text text-light"><i class="far fa-clock"></i> October 15, 2020</p>
+                      <div class="card-footer">
+                        <img src="images/trainer-3.jpg" alt="" class="rounded-pill" width="95px">
+                        <h6 class="text-light">Eng Marcos</h6>
+                        <p class="text-light">Director of Backend Development</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card card-t mx-auto shadow-lg mt-5 cols cols-sm cols-lg-4" style="width:370px">
+                    <img class="card-img-top" src="images/trainer-2.jpg" alt="Card image" height="450">
+                    <div class="card-img-overlay p-5  opacity-75">
+                      <h5 class="card-title text-light">All thanks and appreciation</h5>
+                      <p class="card-text text-light"><i class="far fa-clock"></i> October 15, 2020</p>
+                      <div class="card-footer">
+                        <img src="images/trainer-2.jpg" alt="" class="rounded-pill" width="95px">
+                        <h6 class="text-light">Eng Sara</h6>
+                        <p class="text-light">Director of Frontend Development</p>
+                      </div>
+                    </div>
+                </div>
+            </div> <hr>
+        </div>
+    </section>
+    <!-- End thanks section------------------------------------------------------------------ -->
+
+    <!-- Start news section------------------------------------------------------------------ -->
+    <section class="news">
+        <div class="news-header text-center pt-4">
+            <h2 class="section-title fw-semibold">EGYPT NEWS</h2>
+        </div>
+        <div class="container">
+            <div class="Podcast-item rounded-4 p-5 shadow-lg mb-5 row">
+                <div class="podcast-item-content col-lg-8 col-12">
+                    <div class="podcast-header">
+                        <h2>Podcast Title</h2>
+                        <span><i class="fas fa-calendar"></i> Mon, May 25th 2020</span>
+                        <div class="line line1 mb-3"></div>
+                    </div>
+                    <div class="podcast-body">
+                        <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..Lorem ipsum dolor sit amet, 
+                           consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..
+                        </p> 
+                        
+                        <button type="button" class="btn btn-secondary btn-sm text-dark border-0"><i class="fas fa-tag"></i>Podcast</button>
+                        <button type="button" class="btn btn-secondary btn-sm text-dark border-0"><i class="fas fa-clock"></i>55 mints</button>
+                        <button type="button" class="btn btn-secondary btn-sm text-dark border-0 btn1"><i class="fas fa-play"></i>Play Episode</button>
+                    </div>
+                </div> 
+                <div class="demo demo1 col-lg-4 col-12"></div> 
+            </div>
+            <div class="Podcast-item rounded-4 p-5 shadow-lg mb-5 row d-flex flex-row-reverse">
+                <div class="podcast-item-content col-lg-8 col-12">
+                    <div class="podcast-header">
+                        <h2>Podcast Title</h2>
+                        <span><i class="fas fa-calendar"></i> Mon, May 25th 2020</span>
+                        <div class="line line2 mb-3"></div>
+                    </div>
+                    <div class="podcast-body">
+                        <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..Lorem ipsum dolor sit amet, 
+                           consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..
+                        </p> 
+                        <button type="button" class="btn btn-secondary btn-sm text-dark border-0"><i class="fas fa-tag"></i>Podcast</button>
+                        <button type="button" class="btn btn-secondary btn-sm text-dark border-0"><i class="fas fa-clock"></i>55 mints</button>
+                        <button type="button" class="btn btn-secondary btn-sm text-dark btn-outline-danger border-0"><i class="fas fa-play"></i>Play Episode</button>
+                    </div>  
+                </div>
+                <div class="demo demo2 col-lg-4 col-12"></div> 
+            </div>
+            <div class="Podcast-item rounded-4 p-5 shadow-lg mb-5 row">
+                <div class="podcast-item-content col-lg-8 col-12">
+                    <div class="podcast-header">
+                        <h2>Podcast Title</h2>
+                        <span><i class="fas fa-calendar"></i> Mon, May 25th 2020</span>
+                        <div class="line line3 mb-3"></div>
+                    </div>
+                    <div class="podcast-body">
+                        <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..Lorem ipsum dolor sit amet, 
+                           consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..
+                        </p> 
+                        <button type="button" class="btn btn-secondary btn-sm text-dark border-0"><i class="fas fa-tag"></i>Podcast</button>
+                        <button type="button" class="btn btn-secondary btn-sm text-dark border-0"><i class="fas fa-clock"></i>55 mints</button>
+                        <button type="button" class="btn btn-secondary btn-sm text-dark border-0 btn3"><i class="fas fa-play"></i>Play Episode</button>
+                    </div>
+                </div> 
+                <div class="demo demo3 col-lg-4 col-12"></div> 
+            </div>
+            <div class="Podcast-item rounded-4 p-5 shadow-lg mb-5 row  d-flex flex-row-reverse">
+                <div class="podcast-item-content col-lg-8 col-12">
+                    <div class="podcast-header">
+                        <h2>Podcast Title</h2>
+                        <span><i class="fas fa-calendar"></i> Mon, May 25th 2020</span>
+                        <div class="line line4 mb-3"></div>
+                    </div>
+                    <div class="podcast-body">
+                        <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..Lorem ipsum dolor sit amet, 
+                           consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..
+                        </p> 
+                        <button type="button" class="btn btn-secondary btn-sm text-dark border-0"><i class="fas fa-tag"></i>Podcast</button>
+                        <button type="button" class="btn btn-secondary btn-sm text-dark border-0"><i class="fas fa-clock"></i>55 mints</button>
+                        <button type="button" class="btn btn-secondary btn-sm text-dark border-0 btn4"><i class="fas fa-play"></i>Play Episode</button>
+                    </div>  
+                </div>
+                <div class="demo demo4 col-lg-4 col-12"></div> 
+            </div>
+        </div>  <!-- /container -->
+    </section>
+    <!-- End news section------------------------------------------------------------------ -->
+
+    <!-- Start Join section---------------------------------------------------------------- -->
+    <section>
+        <div class="join-header text-center pt-4">
+            <h2 class="section-title fw-semibold">JOIN US</h2>
+        </div>
+        
+        <div class="container">
+            <div class="parent-j d-flex row justify-content-center justify-content-md-around pb-4">
+                <div class="join-item bg-light text-center rounded-2 col-lg-2 col-md-5 col-8 mt-4">
+                    <div class="join-item-content">
+                        <h4 class="text-info mb-3">Subscribe Now</h4>
+                        <input type="image" src="images/twetter.jpg" class="join-img rounded mb-3" height="60" width="60">
+                        <a href="#" class="text-info nav-link fs-5">Go to link</a>
+                    </div>
+                </div>
+                <div class="join-item bg-light text-center rounded-2 col-lg-2 col-md-5 col-8  mt-4">
+                    <div class="join-item-content">
+                        <h4 class="text-info mb-3">Follow</h4>
+                        <input type="image" src="images/whats.jpg" class="join-img rounded mb-3" height="60" width="60">
+                        <a href="#" class="text-info nav-link fs-5">Go to link</a>
+                    </div>
+                </div>
+                <div class="join-item bg-light text-center rounded-2 col-lg-2 col-md-5 col-8  mt-4">
+                    <div class="join-item-content">
+                        <h4 class="text-info mb-3">Like the page</h4>
+                        <input type="image" src="images/in.jpg" class="join-img rounded mb-3" height="60" width="60">
+                        <a href="#" class="text-info nav-link fs-5">Go to link</a>
+                    </div>
+                </div>
+                <div class="join-item bg-light text-center rounded-2 col-lg-2 col-md-5 col-8 mt-4">
+                    <div class="join-item-content">
+                        <h4 class="text-info mb-3">Watch Videos</h4>
+                        <input type="image" src="images/insta.jpg" class="join-img rounded mb-3" height="60" width="60">
+                        <a href="#" class="text-info nav-link fs-5 ">Go to link</a>
+                    </div>
+                </div>
+            </div>  <!-- /parent-j -->
+        </div>  <!-- /container -->
+    </section>
+    <!-- End Join section---------------------------------------------------------------- -->
+
+    <!-- Start footer-------------------------------------------------------------------- -->
+    <footer class="bg-info">
+        <div class="container-fluid">
+            <div class="footer-item row justify-content-between">
+                <div class="footer-img col-sm col-md-4 pt-2 text-center"><hr class="ff">
+                    <img src="images/logo1.jpg" alt="footer-logo" class="rounded-pill" width="70px">
+                    <span class="text-light"> Good Company</span><hr class="ff">
+                    <ul type="none" class="item-info text-light">
+                        <li>Tel: 000-000-000</li>
+                        <li>Adress: Egypt</li>
+                        <li>Fax: 000-000-000</li>
+                    </ul>
+                </div>
+                <div class="footer-img col-sm col-md-4 pt-2 text-center"><hr class="ff">
+                    <img src="images/logo1.jpg" alt="footer-logo" class="rounded-pill" width="70px">
+                    <span class="text-light"> Important Links</span><hr class="ff">
+                    <ul type="none" class="item-info">
+                        <li><a href="#" class="text-decoration-none">Visit Us</a></li>
+                        <li><a href="#" class="text-decoration-none">Take alook</a></li>
+                        <li><a href="#" class="text-decoration-none">Your health is more important</a></li>
+                    </ul>
+                </div>
+                <div class="footer-img col-sm col-md-4 pt-2 text-center"><hr class="ff">
+                    <img src="images/logo1.jpg" alt="footer-logo" class="rounded-pill" width="70px">
+                    <span class="text-light"> Vision</span><hr class="ff">
+                    <ul type="none" class="item-info text-light">
+                        <li>Services for all</li>
+                        <li>Provide best services</li>
+                        <li>You will be better than before</li>
+                    </ul>
+                </div><hr class="ff">
+            </div>
+            <div class="copy text-center">
+                <p class="copyright fw-bold fs-4">COPYRIGHT &COPY; 2020. ALL RIGHT RESERVED BY GOOD COPANY</p>
+            </div><hr class="ff">
+        </div>
+    </footer>
+    <!-- End footer-------------------------------------------------------------------- -->
+    <script src="https://cdn.jsdelivr.XYZ/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script>
+        document.getElementById("btn1").onclick = function(){
+            alert("تم نسخ النص")
+        }
+        document.getElementById("btn2").onclick = function(){
+            alert("تم نسخ النص")
+        }
+        document.getElementById("btn3").onclick = function(){
+            alert("تم نسخ النص")
+        }
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

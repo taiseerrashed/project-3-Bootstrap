@@ -1,0 +1,310 @@
+body{
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+html::-webkit-scrollbar {
+    width: 0.5rem;
+}
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    background: #1283ce;
+    border-radius: 30px;
+}
+.dropdown ul{
+    background-color: rgba(212, 247, 240, 0.7);
+    border: 0;
+    border-radius: 4px;
+}
+.container-fluid .navbar-text , .text-title ,
+.accordion-header .accordion-button,
+.section-title , .copy p{
+    background-image: linear-gradient(to bottom, red, blue );
+    background-clip: text;
+    -webkit-background-clip: text; /* For Safari/Chrome */
+    color: transparent; 
+}
+.container-fluid .navbar-text{
+    border-right: 2px solid rgb(142, 110, 110);
+    padding: 9px;
+}
+.carousel{
+    margin-top: 82px;
+}
+.carousel-item img{
+    height: 90vh;
+}
+.carousel-caption{
+    background-color: rgba(140, 199, 239, 0.7);
+}
+.list{
+    list-style: none;
+    position: absolute;
+    position: fixed;
+    right: 50px;
+    bottom: 80px;
+    z-index: 15;
+}
+.list li a{
+    font-size: 50px;
+    color: rgb(36, 36, 83);
+}
+.list li a:hover{
+    color: rgb(51, 121, 251);
+}
+
+.welcome , .write-translate{
+    background-color: rgb(141, 205, 218);
+}
+.destination , .translate , .section-header{
+    background-color: rgb(91, 155, 153);
+}
+.ttt{
+    height: 120px;
+    border: 0;
+}
+.write-translate .btn{
+    position: relative;
+}
+.write-translate .btn::before , .write-translate .btn::after{
+    position: absolute;
+    background-color: rgb(164, 239, 240);
+    border-radius: 5px 15px 10px;
+    top: 30px;
+    left: 60px;
+    right: 0;
+    bottom: 0;
+    color: #1283ce;
+}
+.write-translate .btn::before{
+    content: "Copy to Calipboard";
+    width: 90px;
+    height: 50px;
+    display: none;
+}
+.write-translate .btn:hover::before{
+    display: block;
+}
+.write-translate .btn::after{
+    content: "Copied";
+    width: 90px;
+    height: 30px;
+    display: none;
+}
+.write-translate .btn:focus::before{
+    display: none;
+}
+.write-translate .btn:focus::after{
+    display: block;
+}
+
+.backimg{
+    width: 100%;
+    height: 270px;
+    background-image: url(../images/luxur/img9.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.card-d{
+    padding: 0 10px;
+}
+.parent .card-d::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(133, 209, 235);
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 1s;
+}
+.parent .card-d:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.parent .card-d::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(133, 209, 235);
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: 1s;
+}
+.parent .card-d:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.bbmm{
+    width: 100%;
+    height: 270px;
+    background-image: url(../images/aswan/img7.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.card-t:hover{
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+.card-img-overlay{
+    background-color: rgb(37, 37, 37);
+}
+.card-t:hover .card-img-overlay{
+    background-color: rgb(28, 28, 56);
+}
+.card-footer{
+    position: absolute;
+    top: 60%;
+}
+.card-footer img{
+    border: 2px solid rgb(127, 127, 233);
+}
+
+.Podcast-item{
+    background-color: rgb(168, 226, 228);
+    position: relative;
+    height: 430px;
+}
+.demo{ 
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: inherit;
+    position: absolute;  
+    cursor: pointer;
+}
+.demo1 , .demo3{
+    clip-path: polygon(22% -3%, 108% 0%, 113% 107%, 30% 111%);
+    top: 0;
+    right: 0;
+}
+.demo2 , .demo4{
+    clip-path: polygon(-2% -2%, 85% -0%, 75% 100%, 0% 100%);
+    top: 0;
+    left: 0;
+}
+.demo1{
+    background-image: url(../images/galalh/IMG-20230227-WA0040.jpg);  
+}
+.demo2{
+    background-image: url(../images/Hurghada/ralf-schlegel-gGIaHmXcSp8-unsplash.jpg); 
+}
+.demo3{
+    background-image: url(../images/luxur/img2.jpg);
+}
+.demo4{
+    background-image: url(../images/siwa/img4.jpg);
+}
+.Podcast-header h2{
+    color: rgb(52, 52, 103);
+}
+.line{
+    width: 80px;
+    height: 3px;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+.Podcast-item:hover .line{
+    width: 130px;
+}
+.podcast-body .btn{
+    background-color: cadetblue;
+}
+.line1, .btn1:hover{
+    background-color: rgb(11, 95, 151)  !important;
+}
+.line2{
+    background-color: red;
+}
+.line3, .btn3:hover{
+    background-color: yellowgreen  !important;
+}
+.line4 , .btn4:hover{
+    background-color: rgb(192, 192, 63) !important;
+}
+.podcast-body .btn:hover{
+    color: white !important;
+}
+.podcast-body p{
+    margin-bottom: 100px !important;
+}
+
+.join-item{
+    box-shadow: 1px 1px 30px 2px rgb(186, 190, 191);
+    padding: 12px 0;
+}
+.join-img{
+    box-shadow: 1px 1px 20px 5px rgb(186, 190, 191);
+}
+.join-img:hover{
+    opacity: 0.5;
+}
+.join-item-content a:hover{
+    color: rgb(71, 71, 178) !important;
+}
+
+.item-info li{
+    margin-bottom: 10px;
+}
+
+.ff{
+    color: white !important;
+}
+.footer-img img{
+    box-shadow: 1px 1px 30px 2px rgb(241, 244, 245);
+}
+footer{
+    min-height: 370px;
+}
+
+
+@media(max-width:540px){
+    .navbar .btn{
+        margin-top: 10px !important;
+    }
+    .carousel-item img{
+        height: 70vh;
+    }
+
+    .card-d .card-img-top{
+        height: 320px;
+    }
+
+    .Podcast-item{
+        width: 100%;
+        height: auto;
+        font-size: 12px;
+        display: flex ;
+        flex-direction: column-reverse ;
+    }
+    .podcast-item-content .podcast-header{
+        margin-top: 130px;
+    }
+    .line{
+        width: 10px;
+    }
+    .podcast-body p{
+        margin-bottom: 10px !important;
+    }
+    .podcast-body .btn{
+        margin-bottom: 5px;
+        margin-left: 5px;
+    }
+    .demo{
+        height: 160px;
+        border-radius: 20px 20px 0 0;
+        clip-path: polygon(-23% -2%, 108% 0%, 113% 107%, -11% 110%);
+    }
+}
+
